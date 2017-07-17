@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js"></script>
+    <title>Recipe book</title>
+</head>
+
+<body>
+<div id="nav">
+    <a href="/"> <h1>My Recipes</h1></a>
+<div id="search_div">
+    <input type="text" id="searchText">
+    <img class="arrowImg" src="https://cdn4.iconfinder.com/data/icons/free-large-business-icons/512/Zoom_SH.png" id="magnifing_glass">
+</div>
+</div>
+    <!--where all the recipes is showing--> 
+    <div id="recipes_container"></div>
+    
+ 
+  <!--plus sign to add recipe-->  
+<img id='add_img' src="http://icongal.com/gallery/image/178048/sign_add_worl_plus.png">
+    
+    <!--add recipe form's overlay--> 
+    <div id="overlay">
+    <div id="frame">
+    <form id="myForm">
+ 
+        <div id="ing_div">
+                  <!--contains added ingerdients--> 
+        Ingredients:<br><ul id="ing_list"></ul> 
+            
+        </div>
+        <div class="form_div">
+            <label class="form_label"> Name </label>
+          <input type="text" id="rname"> 
+          </div>
+     <div class="form_div">
+        <label class="form_label"> Ingredients </label>
+         <input type="text" id="ing_text"><button id="add_ing">+</button> 
+        </div>
+     <div class="form_div">
+             <label class="form_label"> Instructions </label>
+            <input type="text" id="ins_text">         
+        </div>
+     <div class="form_div">
+             <label class="form_label"> Notes </label>
+          <input type="text" id="notes_text">         
+        </div>
+     <div class="form_div">
+             <label class="form_label"> Duration </label>
+          <input type="number" id="duration_text">         
+        </div>
+     <div class="form_div">
+             <label class="form_label">  Images </label>
+         <input type="text" id="img_link"><button id="addImg">Add img</button>       
+        </div>
+     
+            <!--contains added images--> 
+        <ul id="images_ul"></ul>  
+     
+    <div id="form_buttons">
+        <button id="submit_form">Done</button>
+        <button type="reset" id="cancel_form">Cancel</button>
+        </div>
+    </form>
+        </div>
+    </div>
+</body>
+</html>
